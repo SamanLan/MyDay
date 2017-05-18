@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/view_top"
+        layout="@layout/topbar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_content"
+        android:background="#fafafa"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v4.view.ViewPager>
+
+    <!--<View-->
+        <!--android:background="@drawable/yinying"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp" />-->
+
+    <me.majiajie.pagerbottomtabstrip.PageBottomTabLayout
+        android:elevation="8dp"
+        android:background="#fff"
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </me.majiajie.pagerbottomtabstrip.PageBottomTabLayout>
+</LinearLayout>
