@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
+    <View
+        android:background="@drawable/bg_topbar"
         android:id="@+id/view_top"
-        layout="@layout/topbar" />
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 
-    <android.support.v4.view.ViewPager
+    <com.samanlan.lib_ui.view.NoSlideViewPager
         android:id="@+id/view_content"
         android:background="#fafafa"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-    </android.support.v4.view.ViewPager>
+    </com.samanlan.lib_ui.view.NoSlideViewPager>
 
     <!--<View-->
         <!--android:background="@drawable/yinying"-->

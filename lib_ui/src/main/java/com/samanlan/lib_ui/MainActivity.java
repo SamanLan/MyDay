@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.flyco.systembar.SystemBarHelper;
+import com.samanlan.lib_ui.adapter.MainPagerAdapter;
 
 import me.majiajie.pagerbottomtabstrip.MaterialMode;
 import me.majiajie.pagerbottomtabstrip.NavigationController;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView(Bundle savedInstanceState) {
         viewContent = (ViewPager) findViewById(R.id.view_content);
+        MainPagerAdapter mainPagerAdapter = new MainPagerAdapter(getSupportFragmentManager());
+        viewContent.setAdapter(mainPagerAdapter);
         viewTop = findViewById(R.id.view_top);
         // 底部栏初始化
         viewBottom = (PageBottomTabLayout) findViewById(R.id.view_bottom);
@@ -39,5 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 .addItem(R.drawable.icon_me, R.drawable.icon_me_check, "我的", 0xFF4D8FFC)
                 .setMode(MaterialMode.HIDE_TEXT)
                 .build();
+        controller.setupWithViewPager(viewContent);
     }
 }
