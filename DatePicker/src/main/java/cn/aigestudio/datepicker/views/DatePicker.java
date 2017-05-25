@@ -1,14 +1,8 @@
 package cn.aigestudio.datepicker.views;
 
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
-import android.util.TypedValue;
-import android.view.Gravity;
-import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import java.util.List;
 
@@ -16,9 +10,6 @@ import cn.aigestudio.datepicker.bizs.decors.DPDecor;
 import cn.aigestudio.datepicker.bizs.languages.DPLManager;
 import cn.aigestudio.datepicker.bizs.themes.DPTManager;
 import cn.aigestudio.datepicker.cons.DPMode;
-import cn.aigestudio.datepicker.utils.MeasureUtil;
-
-import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 /**
  * DatePicker
@@ -29,7 +20,7 @@ public class DatePicker extends LinearLayout {
     private DPTManager mTManager;// 主题管理器
     private DPLManager mLManager;// 语言管理器
 
-    private MonthView monthView;// 月视图
+    public MonthView monthView;// 月视图
 //    private TextView tvYear, tvMonth;// 年份 月份显示
 //    private TextView tvEnsure;// 确定按钮显示
 

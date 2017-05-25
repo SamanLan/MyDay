@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.samanlan.lib_ui.fragment.ShouyeFragment;
 import com.samanlan.lib_ui.fragment.TrajectoryFragment;
+import com.samanlan.lib_ui.fragment.TrajectoryFragment2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         ShouyeFragment shouyeFragment = new ShouyeFragment();
         TrajectoryFragment trajectoryFragment = new TrajectoryFragment();
-        TrajectoryFragment meFragment = new TrajectoryFragment();
+        TrajectoryFragment2 meFragment = new TrajectoryFragment2();
         list.add(shouyeFragment);
         list.add(trajectoryFragment);
         list.add(meFragment);
